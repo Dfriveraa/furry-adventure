@@ -5,7 +5,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func SetupFilesRoutes(app fiber.Router) {
+func setupFilesRoutes(app fiber.Router) {
 	app.Get("/files/save", controllers.SaveFile)
 	app.Get("/files", controllers.GetFiles)
 

@@ -6,5 +6,5 @@ import (
 )
 
 func setupUsersRoutes(app fiber.Router) {
-	app.Post("/user", controllers.CreateUser)	
+	app.Post("/user", controllers.CreateUser)
 }

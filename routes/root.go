@@ -9,6 +9,6 @@ func healthCheck(c *fiber.Ctx) error {
 	return c.Status(200).JSON(models.HealthCheck)
 }
 
-func SetupRootRoute(app fiber.Router) {
+func setupRootRoute(app fiber.Router) {
 	app.Get("/", healthCheck)
 }
