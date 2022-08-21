@@ -12,15 +12,15 @@ func main() {
 
 	config := core.Configuration
 
-	// app := fiber.New()
-	// routes.SetupRoutes(app)
+	app := fiber.New()
+	routes.SetupRoutes(app)
 
-	// listen := ":" + config.Port
-	// fmt.Println("Server started on port", listen)
+	listen := ":" + config.Port
+	fmt.Println("Server started on port", listen)
 
-	// err := app.Listen(listen)
-	// fmt.Print("Error: ", err)
-	// if err != nil {
-	// 	panic(err)
-	// }
+	err := app.Listen(listen)
+	fmt.Print("Error: ", err)
+	if err != nil {
+		panic(err)
+	}
 }
