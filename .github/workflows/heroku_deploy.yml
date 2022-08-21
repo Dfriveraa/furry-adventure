@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and push Docker to Heroku
         env:
-          HEROKU_APP_NAME: sheltered-basin-42931
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
           DOCKERFILE_DIRECTORY: "docker"
-          HEROKU_EMAIL: daniel.riveraa@udea.edu.co
+          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
           DOCKERFILE_NAME: "Dockerfile"
           DOCKER_OPTIONS: "--no-cache"
