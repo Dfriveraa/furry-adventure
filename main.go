@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/Sht97/furry-adventure/core"
 	"github.com/Sht97/furry-adventure/routes"
 	"github.com/gofiber/fiber/v2"
